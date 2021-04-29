@@ -1,0 +1,9 @@
+# Zipkin endpoint
+ENDPOINT: http://localhost:9411/api/v2/spans
+
+# Reporter encoding
+ENCODING: json
+
+# Server configurations
+FRONTEND_PORT: 8081
+BACKEND_PORT: 9000

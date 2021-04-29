@@ -1,0 +1,14 @@
+
+TARGET = zipkin-go-example
+
+build:
+	go build -o bin/${TARGET} cmd/${TARGET}/main.go
+
+module:
+	rm -f go.mod go.sum
+	go mod init github.com/smlobo/${TARGET}
+	go mod tidy
+
+clean:
+	rm -rf bin
+	rm -f go.mod go.sum
