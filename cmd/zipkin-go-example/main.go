@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	zipkinhttp "github.com/openzipkin/zipkin-go/middleware/http"
-	exampleconfig "github.com/smlobo/zipkin-go-example/internal/config"
-	examplehandler "github.com/smlobo/zipkin-go-example/internal/handler"
-	exampletracer "github.com/smlobo/zipkin-go-example/internal/tracer"
 	"log"
 	"net/http"
 	"os"
 	"strconv"
+	exampleconfig "zipkin-go-example/internal/config"
+	examplehandler "zipkin-go-example/internal/handler"
+	exampletracer "zipkin-go-example/internal/tracer"
 )
 
 // Global uint16 ports from config

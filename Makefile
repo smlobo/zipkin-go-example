@@ -6,7 +6,7 @@ build:
 
 module:
 	rm -f go.mod go.sum
-	go mod init github.com/smlobo/${TARGET}
+	go mod init ${TARGET}
 	go mod tidy
 
 clean:

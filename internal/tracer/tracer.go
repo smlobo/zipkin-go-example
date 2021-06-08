@@ -20,9 +20,9 @@ import (
 	"github.com/openzipkin/zipkin-go/proto/zipkin_proto3"
 	"github.com/openzipkin/zipkin-go/reporter"
 	httpreporter "github.com/openzipkin/zipkin-go/reporter/http"
-	exampleconfig "github.com/smlobo/zipkin-go-example/internal/config"
 	"log"
 	"net"
+	exampleconfig "zipkin-go-example/internal/config"
 )
 
 func NewTracer(serviceName string, port uint16) (*zipkin.Tracer, error) {

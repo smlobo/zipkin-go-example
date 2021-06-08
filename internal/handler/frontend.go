@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"github.com/openzipkin/zipkin-go"
 	zipkinhttp "github.com/openzipkin/zipkin-go/middleware/http"
-	exampleconfig "github.com/smlobo/zipkin-go-example/internal/config"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
+	exampleconfig "zipkin-go-example/internal/config"
 )
 
 func FrontendHandler(client *zipkinhttp.Client) http.HandlerFunc {
